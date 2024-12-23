@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebenslauf von Daria Bredhauer</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header class="header-background">
+      <label for="hamburger" class="menu-hamburger">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </label>
+      <div class="headr-top">
+        <span class="logo"> <a href="index.html">Daria Bredhauer</a> </span>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu-element">
+              <a
+                class="menu-element__link"
+                href="index.html"
+                id="menu-startseite"
+                >Startseite</a
+              >
+            </li>
+            <li class="menu-element">
+              <a
+                class="menu-element__link"
+                href="über mich.html"
+                id="menu-über_mich"
+                >Über mich</a
+              >
+            </li>
+            <li class="menu-element">
+              <a
+                class="menu-element__link active"
+                href="leistungen.html"
+                id="menu-leistungen"
+                >Leistungen/Skills</a
+              >
+            </li>
+            <li class="menu-element">
+              <a
+                class="menu-element__link"
+                href="interessen.html"
+                id="menu-interessen"
+                >Interessen</a
+              >
+            </li>
+            <li class="menu-element">
+              <a
+                class="menu-element__link"
+                href="kontakt.html"
+                id="menu-kontakt"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-center-background">
+        <h1 class="name">Daria&nbsp; Bredhauer</h1>
+        <h2 class="name-job">Software&nbsp; Developer</h2>
+      </div>
+    </header>
+    <section class="leistungen section-grey" id="leistungen">
+      <h2 class="text" id="achievements">Meine Leistungen</h2>
+      <div class="leistungen-list slider">
+        <input
+          class="slider__input"
+          type="radio"
+          name="slider_leistungen"
+          id="slider-leistungen-1"
+        />
+        <input
+          class="slider__input"
+          type="radio"
+          name="slider_leistungen"
+          id="slider-leistungen-2"
+        />
+        <input
+          class="slider__input"
+          type="radio"
+          name="slider_leistungen"
+          id="slider-leistungen-3"
+        />
+        <div class="leistungen-list__view slider__wrapper">
+          <a
+            href="img/1.PNG"
+            target="_blank"
+            class="leistungen-list__element slider__link"
+          >
+            <img
+              class="leistungen-list__img slider__img"
+              src="img/1.PNG"
+              alt=""
+            />
+          </a>
+          <a
+            href="img/2.PNG"
+            target="_blank"
+            class="leistungen-list__element slider__link"
+          >
+            <img
+              class="leistungen-list__img slider__img"
+              src="img/2.PNG"
+              alt=""
+            />
+          </a>
+          <a
+            href="img/3.PNG"
+            target="_blank"
+            class="leistungen-list__element slider__link"
+          >
+            <img
+              class="leistungen-list__img slider__img"
+              src="img/3.PNG"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="leistungen-list__view slider__wrapper">
+          <a href="img/1728561820658.jpg" target="_blank" class="leistungen-list__element slider__link">
+            <img class="leistungen-list__img slider__img" src="img/1728561820658.jpg" alt="" />
+          </a>
+          <a href="img/1729271755200.jpg" target="_blank" class="leistungen-list__element slider__link">
+            <img class="leistungen-list__img slider__img" src="img/1728561820658.jpg" alt="" />
+          </a>
+          <a href="img/UC-7d100efb-f15e-4f60-af44-4561a39fe5e7.jpg" target="_blank"  class="leistungen-list__element slider__link">
+            <img class="leistungen-list__img slider__img" src="img/UC-7d100efb-f15e-4f60-af44-4561a39fe5e7.jpg" alt="" />
+          </a>
+      </div>
+      <div class="leistungen-list__view slider__wrapper">
+        <a href="" class="leistungen-list__element slider__link">
+          <img class="leistungen-list__img slider__img" src="" alt="" />
+        </a>
+        <a href="" class="leistungen-list__element slider__link">
+          <img class="leistungen-list__img slider__img" src="" alt="" />
+        </a>
+        <a href="" class="leistungen-list__element slider__link">
+          <img class="leistungen-list__img slider__img" src="" alt="" />
+        </a>
+      </div>
+      </div>
+      <div class="slider__controls">
+        <label for="slider-leistungen-1" class="slider__controls-element">
+        </label>
+        <label for="slider-leistungen-2" class="slider__controls-element">
+        </label>
+        <label for="slider-leistungen-3" class="slider__controls-element">
+        </label>
+      </div>
+    </section>
+    <section class="skills">
+      <h2 class="text">Skills</h2>
+      <ul class="skill-filters">
+        <li class="skill-filter" onclick="showInfo('java')">
+          <img class="img_icon1" src="img/p-80-java.webp" alt="" /> Java
+          <p class="skill-info" id="java">Fortgeschrittene Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('js')">
+          <img class="img_icon1" src="img/js.webp" alt="" />JS
+          <p class="skill-info" id="js">Mittlere Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('html')">
+          <img class="img_icon" src="img/html.webp" alt="" />HTNL
+          <p class="skill-info" id="html">Fortgeschrittene Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('css')">
+          <img class="img_icon" src="img/css.webp" alt="" />CSS
+          <p class="skill-info" id="css">Fortgeschrittene Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('mysql')">
+          <img class="img_icon" src="img/sql.webp" alt="" />Mysql
+          <p class="skill-info" id="mysql">Mittlere Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('react')">
+          <img class="img_icon" src="img/react.webp" alt="" />React
+          <p class="skill-info" id="react">Grundkenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('scrum')">
+          <img class="img_icon" src="img/scrum.webp" alt="" />Scrum
+          <p class="skill-info" id="scrum">Mittlere Kenntnisse</p>
+        </li>
+        <li class="skill-filter" onclick="showInfo('git')">
+          <img class="img_icon" src="img/git.webp" alt="" />Git
+          <p class="skill-info" id="git">Mittlere Kenntnisse</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer section-grey">
+      <ul class="socials">
+        <li class="social-element">
+          <a
+            href="https://www.linkedin.com/in/daria-bredhauer-a50608314/"
+            target="_blank"
+            class="social-element__link"
+          >
+            <img class="link" src="img/in.webp" alt="" />
+          </a>
+        </li>
+        <li class="social-element">
+          <a
+            href="https://github.com/8Daria8?tab=repositories"
+            target="_blank"
+            class="social-element__link"
+          >
+            <img class="link" src="img/github-6980894_960_720.webp" alt="" />
+          </a>
+        </li>
+      </ul>
+      <p class="footer-about">&copy;&nbsp; Daria Bredhauer &nbsp;&nbsp;</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/skills.js"></script>
+  </body>
+</html>
